@@ -3,4 +3,5 @@
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">10.10.5.33</domain>
     </domain-config>
+
 </network-security-config>

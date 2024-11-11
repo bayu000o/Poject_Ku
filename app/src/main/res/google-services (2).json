@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279154926887",
+    "firebase_url": "https://poject-ku-default-rtdb.firebaseio.com",
+    "project_id": "poject-ku",
+    "storage_bucket": "poject-ku.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279154926887:android:7e05b291dd158a3581b502",
+        "android_client_info": {
+          "package_name": "project.ku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279154926887-pb3ot9hl99tpkt7agmr1u62afoirpi93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxl3PXnM-me-hs6tfys_XjWsJYhM202BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279154926887-pb3ot9hl99tpkt7agmr1u62afoirpi93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

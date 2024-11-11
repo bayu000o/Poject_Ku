@@ -1,0 +1,190 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/gradien">
+
+    <!-- Baris pertama ikon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Tombol Bencana -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flood"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bencana"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Tombol Kesehatan -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/protection"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesehatan"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Tombol Edukasi -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/school"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edukasi"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Tombol Lainnya -->
+        <LinearLayout
+            android:id="@+id/lainnya"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/square"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lainnya"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Baris kedua ikon (tersembunyi secara default) -->
+    <LinearLayout
+        android:id="@+id/icon_tambahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingTop="8dp">
+
+        <!-- Tombol Panti Asuhan -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/orphanage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panti Asuhan"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Tombol Difabel/Disabilities -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/diffable"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difabel/Disabilities"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <!-- Tombol Lingkungan -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/planet_earth"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lingkungan"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

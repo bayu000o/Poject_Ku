@@ -26,19 +26,13 @@
 
                 <EditText
                     android:id="@+id/edt_cari"
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/rounded_back"
                     android:drawableRight="@drawable/search"
                     android:hint="Saya ingin bantu.."
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"/>
+                    android:padding="10dp"/>
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:src="@drawable/akun"/>
             </LinearLayout>
 
             <LinearLayout
@@ -78,18 +72,27 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/flood" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Bencana"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/flood" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Bencana"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Tombol Kesehatan -->
@@ -101,18 +104,26 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/protection" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Kesehatan"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/protection" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Kesehatan"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Tombol Edukasi -->
@@ -124,18 +135,26 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/school" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Edukasi"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/school" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Edukasi"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Tombol Lainnya -->
@@ -148,18 +167,26 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/square" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Lainnya"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/square" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Lainnya"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -182,18 +209,26 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/orphanage" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Panti Asuhan"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/orphanage" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Panti Asuhan"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Tombol Difabel/Disabilities -->
@@ -205,18 +240,26 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/diffable" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Difabel/Disabilities"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/diffable" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Difabel/Disabilities"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Tombol Lingkungan -->
@@ -228,18 +271,26 @@
                         android:orientation="vertical"
                         android:padding="8dp">
 
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/planet_earth" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                        <LinearLayout
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:orientation="vertical"
                             android:gravity="center"
-                            android:text="Lingkungan"
-                            android:textColor="@android:color/white"
-                            android:textSize="12sp" />
+                            android:background="@drawable/back_red">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/planet_earth" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Lingkungan"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>

@@ -52,7 +52,7 @@
             android:ems="10"
             android:hint="Masukkan username"
             android:inputType="text"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppins_regular"/>
 
         <EditText
@@ -65,7 +65,7 @@
             android:ems="10"
             android:hint="Masukkan email"
             android:inputType="textEmailAddress"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppins_regular"/>
 
         <EditText
@@ -74,7 +74,7 @@
             android:layout_height="60dp"
             android:ems="10"
             android:background="@drawable/rounded_back"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:hint="Masukkan password"
             android:inputType="textPassword"
             android:fontFamily="@font/poppins_regular"/>

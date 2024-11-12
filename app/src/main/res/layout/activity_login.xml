@@ -51,7 +51,7 @@
             android:inputType="textEmailAddress"
             android:background="@drawable/rounded_back"
             android:hint="Masukkan email"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/poppins_regular"/>
 
@@ -63,7 +63,7 @@
             android:inputType="textPassword"
             android:background="@drawable/rounded_back"
             android:hint="Masukkan password"
-            android:paddingLeft="15dp"
+            android:padding="15dp"
             android:fontFamily="@font/poppins_regular"/>
 
         <TextView

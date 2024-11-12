@@ -15,8 +15,7 @@ import android.widget.LinearLayout;
 import java.sql.ClientInfoStatus;
 import java.util.ArrayList;
 import java.util.List;
-
-
+import java.util.TimeZone;
 
 
 /**
@@ -88,15 +87,26 @@ public class HomePage extends Fragment {
         lainnya = rootView.findViewById(R.id.lainnya);
         iconTambahan = rootView.findViewById(R.id.icon_tambahan);
 
-        viewPager2 = rootView.findViewById(R.id.sl_image);
 
-        List<ImageSlide> list = new ArrayList<>(); // Mengubah list ke List dengan huruf kapital
-        list.add(new ImageSlide(R.drawable.image1));
-        list.add(new ImageSlide(R.drawable.image2));
-        list.add(new ImageSlide(R.drawable.image3));
 
-        ImageSlideAdapter adapter = new ImageSlideAdapter(imageList);
-        viewPager2.setAdapter(adapter);
+
+        ViewPager2 viewPager2 = rootView.findViewById(R.id.view_page);
+
+        List<ImageSlide> sliderItems = new ArrayList<>();
+        sliderItems.add(new ImageSlide(R.drawable.image1));
+        sliderItems.add(new ImageSlide(R.drawable.image2));
+        sliderItems.add(new ImageSlide(R.drawable.image3));
+
+
+        viewPager2.setAdapter(new ImageSlideAdapter(sliderItems, viewPager2, 3000, v -> {
+            viewPager2.setCurrentItem(1);
+        }));
+
+        // Menambahkan jarak antar gambar
+        int marginPx = (int) (15 * getResources().getDisplayMetrics().density); // 16dp ke pixel
+        viewPager2.addItemDecoration(new ItemDecoration(marginPx));
+
+        viewPager2.setCurrentItem(1);
 
 
 

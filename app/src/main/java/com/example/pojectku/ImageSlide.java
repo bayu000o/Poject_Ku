@@ -9,7 +9,7 @@ public class ImageSlide {
         this.resourceId = resourceId;
     }
 
-    public int getResourceId() {
+    public int getImageResId() {
         return resourceId;
     }
 

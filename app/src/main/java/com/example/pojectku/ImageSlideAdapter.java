@@ -7,41 +7,52 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager2.widget.ViewPager2;
 
 import java.util.List;
 
-public class ImageSlideAdapter extends RecyclerView.Adapter<ImageSlideAdapter.ImageViewHolder> {
+public class ImageSlideAdapter extends RecyclerView.Adapter<ImageSlideAdapter.SliderViewHolder> {
 
-    private List<ImageSlide> imageSlides;
+    private List<ImageSlide> sliderItems;
+    private ViewPager2 viewPager2;
+    private long interval;
+    private View.OnClickListener onClickListener;
 
-    public ImageSlideAdapter(List<ImageSlide> imageSlides) {
-        this.imageSlides = imageSlides;
+    public ImageSlideAdapter(List<ImageSlide> sliderItems, ViewPager2 viewPager2, long interval, View.OnClickListener onClickListener) {
+        this.sliderItems = sliderItems;
+        this.viewPager2 = viewPager2;
+        this.interval = interval;
+        this.onClickListener = onClickListener;
     }
 
     @NonNull
     @Override
-    public ImageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public SliderViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_img, parent, false);
-        return new ImageViewHolder(view);
+        view.setOnClickListener(onClickListener);  // Mengatur klik listener
+        return new SliderViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {
-        ImageSlide imageItem = imageSlides.get(position);
-        holder.imageView.setImageResource(imageItem.getResourceId());
+    public void onBindViewHolder(@NonNull SliderViewHolder holder, int position) {
+        holder.setImage(sliderItems.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return imageSlides.size();
+        return sliderItems.size();
     }
 
-    public static class ImageViewHolder extends RecyclerView.ViewHolder {
-        ImageView imageView;
+    class SliderViewHolder extends RecyclerView.ViewHolder {
+        private ImageView imageView;
 
-        public ImageViewHolder(@NonNull View itemView) {
+        SliderViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.sl_image); // Pastikan id sesuai dengan XML
+            imageView = itemView.findViewById(R.id.sl_image);
+        }
+
+        void setImage(ImageSlide slide) {
+            imageView.setImageResource(slide.getImageResId());
         }
     }
 }

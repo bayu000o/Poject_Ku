@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomePage"
     android:background="@drawable/gradien">
@@ -41,12 +41,19 @@
                     android:src="@drawable/akun"/>
             </LinearLayout>
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:id="@+id/view_page"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginTop="15dp"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
 
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
@@ -242,7 +249,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/up_corner">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -250,8 +258,9 @@
                     android:text="Donasi"
                     android:textSize="15dp"
                     android:textColor="@color/black"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"/>
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:layout_marginTop="15dp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/re_donasi"
@@ -261,8 +270,8 @@
                     android:layout_marginBottom="15dp"
                     android:clipToPadding="false"
                     android:orientation="horizontal"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"/>
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -270,8 +279,8 @@
                     android:text="Votunteer"
                     android:textSize="15dp"
                     android:textColor="@color/black"
-                    android:paddingEnd="8dp"
-                    android:paddingStart="8dp"/>
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/re_volunteer"
@@ -281,8 +290,8 @@
                     android:layout_marginBottom="15dp"
                     android:clipToPadding="false"
                     android:orientation="horizontal"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"/>
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -291,31 +300,35 @@
                     android:text="Kenali tentan Peduly Jember"
                     android:textColor="@color/black"
                     android:textSize="15dp"
-                    android:paddingStart="8dp"
-                    android:paddingEnd="8dp"/>
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:layout_marginTop="8dp">
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_back"
+                        android:background="@drawable/gradient_tepi"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        android:padding="8dp"
+                        android:layout_marginRight="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins_semibold"
-                            android:text="Traansparansi"
+                            android:text="Transparansi"
                             android:textColor="@color/black"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            android:layout_marginTop="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -330,9 +343,10 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_back"
+                        android:background="@drawable/gradient_tepi"
                         android:orientation="vertical"
-                        android:padding="8dp">
+                        android:padding="8dp"
+                        android:layout_marginRight="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -340,7 +354,8 @@
                             android:fontFamily="@font/poppins_semibold"
                             android:text="Menjadi Relawan"
                             android:textColor="@color/black"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            android:layout_marginTop="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -355,7 +370,7 @@
                         android:layout_width="0dp"
                         android:layout_height="150dp"
                         android:layout_weight="1"
-                        android:background="@drawable/rounded_back"
+                        android:background="@drawable/gradient_tepi"
                         android:orientation="vertical"
                         android:padding="8dp">
 
@@ -365,7 +380,8 @@
                             android:fontFamily="@font/poppins_semibold"
                             android:text="Profesional"
                             android:textColor="@color/black"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            android:layout_marginTop="5dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"

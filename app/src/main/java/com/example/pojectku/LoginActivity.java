@@ -57,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                 String email = edtemail.getText().toString();
                 String password = edtpass.getText().toString();
 
+
                 if (!email.isEmpty() && !password.isEmpty()) {
                     // Membuat request JSON untuk login
                     JSONObject postData = new JSONObject();

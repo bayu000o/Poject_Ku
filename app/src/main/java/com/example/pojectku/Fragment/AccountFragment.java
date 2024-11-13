@@ -1,4 +1,4 @@
-package com.example.pojectku;
+package com.example.pojectku.Fragment;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.pojectku.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Account#newInstance} factory method to
+ * Use the {@link AccountFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Account extends Fragment {
+public class AccountFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Account extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Account() {
+    public AccountFragment() {
         // Required empty public constructor
     }
 
@@ -37,8 +39,8 @@ public class Account extends Fragment {
      * @return A new instance of fragment Account.
      */
     // TODO: Rename and change types and number of parameters
-    public static Account newInstance(String param1, String param2) {
-        Account fragment = new Account();
+    public static AccountFragment newInstance(String param1, String param2) {
+        AccountFragment fragment = new AccountFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

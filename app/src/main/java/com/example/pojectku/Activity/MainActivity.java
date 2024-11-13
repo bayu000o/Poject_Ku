@@ -1,21 +1,16 @@
-package com.example.pojectku;
+package com.example.pojectku.Activity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
-import java.util.Arrays;
-import java.util.List;
-import android.widget.LinearLayout;
 
+import com.example.pojectku.Fragment.AccountFragment;
+import com.example.pojectku.Fragment.HomeFragment;
+import com.example.pojectku.Fragment.NotivicationFragment;
+import com.example.pojectku.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -29,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loadFragment(new HomePage());
+        loadFragment(new HomeFragment());
 
         BottomNavigationView navigationView = findViewById(R.id.bottom_nav);
         navigationView.setOnNavigationItemSelectedListener(this);
@@ -40,11 +35,11 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Fragment fragment = null;
 
         if (item.getItemId() == R.id.fr_home) {
-            fragment = new HomePage();
+            fragment = new HomeFragment();
         } else if (item.getItemId() == R.id.fr_notif) {
-            fragment = new Notivication();
+            fragment = new NotivicationFragment();
         } else if (item.getItemId() == R.id.fr_akun) {
-            fragment = new Account();
+            fragment = new AccountFragment();
         }
         return loadFragment(fragment);
     }

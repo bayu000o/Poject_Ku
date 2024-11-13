@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomePage"
+    tools:context=".Fragment.HomeFragment"
     android:background="@drawable/gradien">
 
     <!-- TODO: Update blank fragment layout -->
@@ -26,7 +26,7 @@
 
                 <EditText
                     android:id="@+id/edt_cari"
-                    android:layout_width="350dp"
+                    android:layout_width="370dp"
                     android:layout_height="50dp"
                     android:background="@drawable/rounded_back"
                     android:drawableRight="@drawable/search"
@@ -45,7 +45,7 @@
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/view_page"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="200dp" />
 
             </LinearLayout>
 
@@ -303,15 +303,29 @@
                 android:orientation="vertical"
                 android:background="@drawable/up_corner">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Donasi"
-                    android:textSize="15dp"
-                    android:textColor="@color/black"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp"
-                    android:layout_marginTop="15dp"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Donasi"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua"
+                        android:textSize="15sp"
+                        android:textColor="@color/coklat"
+                        android:layout_marginTop="15dp"/>
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/re_donasi"
@@ -324,19 +338,32 @@
                     android:paddingStart="15dp"
                     android:paddingEnd="15dp"/>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Votunteer"
-                    android:textSize="15dp"
-                    android:textColor="@color/black"
-                    android:paddingStart="15dp"
-                    android:paddingEnd="15dp"/>
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Votunteer"
+                        android:textSize="15dp"
+                        android:textColor="@color/black"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua"
+                        android:textSize="15sp"
+                        android:textColor="@color/coklat"/>
+                </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/re_volunteer"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
                     android:clipToPadding="false"
@@ -361,7 +388,8 @@
                     android:gravity="center"
                     android:layout_marginTop="8dp"
                     android:paddingStart="15dp"
-                    android:paddingEnd="15dp">
+                    android:paddingEnd="15dp"
+                    android:layout_marginBottom="60dp">
 
                     <LinearLayout
                         android:layout_width="0dp"

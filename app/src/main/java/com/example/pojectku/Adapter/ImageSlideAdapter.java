@@ -1,4 +1,4 @@
-package com.example.pojectku;
+package com.example.pojectku.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,9 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.example.pojectku.ImageSlide;
+import com.example.pojectku.R;
 
 import java.util.List;
 
